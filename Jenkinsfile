@@ -3,15 +3,9 @@ pipeline {
 
     stages {
 
-        stage('Clone Repository') {
-            steps {
-                echo 'Repository already cloned'
-            }
-        }
-
         stage('Run Python Script') {
             steps {
-                bat 'python sample.py'
+                bat '"C:\\Users\\student\\AppData\\Local\\Programs\\Python\\Python313\\python.exe" sample.py'
             }
         }
 
